@@ -1,12 +1,15 @@
 // server.js
 var express = require("express");
-var logfmt = require("logfmt");
-var app = express();
+var fs = require("fs");
+var htmlfile = "index.html";
 
-app.use(logfmt.requestLogger());
+var app = express.createServer(express.logger());
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
+//app.use(logfmt.requestLogger());
+
+app.get('/', function(request, response) {
+  var html = fs.readFileSync(htmlfile).toString();
+  response.send(html);
 });
 
 var port = process.env.PORT || 8080;
