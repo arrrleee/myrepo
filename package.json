@@ -1,0 +1,24 @@
+{
+  "name": "myrepo",
+  "version": "0.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arrrleee/myrepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrrleee/myrepo/issues"
+  },
+  "homepage": "https://github.com/arrrleee/myrepo",
+  "dependencies": {
+    "express": "~3.4.8",
+    "logfmt": "~0.18.1"
+  },
+  "devDependencies": {}
+}
