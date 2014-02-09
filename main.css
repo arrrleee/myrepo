@@ -11,12 +11,12 @@ Updated: 01/23/2014;
     right: 0;
     top: 0;
     border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 1px 1px #B2B2B2;
-    font-family: "Avenir", Avenir, Arial, sans-serif;
-    font-weight: 320;
-    font-size: 14px;
-    letter-spacing: 1.3px;
-    color: inherit;
+	box-shadow: 1px 1px 1px 1px #B2B2B2;
+	font-family: "Avenir", Avenir, Arial, sans-serif;
+	font-weight: 320;
+	font-size: 14px;
+	letter-spacing: 1.3px;
+	color: inherit;
     text-align: center;
 }
 
@@ -59,8 +59,8 @@ Updated: 01/23/2014;
 }
 
 #about {
-    padding-top: 100px;
-    padding-bottom: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
   background: #inherit;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#EBF5FF), to(#FFFFFF));
   background-image: -webkit-linear-gradient(top, #EBF5FF, #FFFFFF);
@@ -70,9 +70,9 @@ Updated: 01/23/2014;
 }
 
 #music {
-    /*border-top: 1px solid #999999;*/
+	/*border-top: 1px solid #999999;*/
   padding-top: 100px;
-   padding-bottom: 100px;
+	 padding-bottom: 100px;
   background: #ffffff url(https://dl.dropboxusercontent.com/u/87043264/photos/HD-Wallpapers/mixer.png) center center no-repeat; /*#EBF5FF*/
   /*background-image: -webkit-gradient(linear, left top, left bottom, from(#EBF5FF), to(#b0d8ff));
   background-image: -webkit-linear-gradient(top, #EBF5FF, #b0d8ff);
@@ -83,15 +83,15 @@ Updated: 01/23/2014;
 }
 
 #moments {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: white;
 }
 
 #code {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: black;
+	background-color: black;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#D1F0FF));
   background-image: -webkit-linear-gradient(top, #FFFFFF, #D1F0FF);
   background-image:    -moz-linear-gradient(top, #FFFFFF, #D1F0FF);
@@ -107,14 +107,14 @@ Updated: 01/23/2014;
 
 #connect {
   padding-top: 100px;
-  padding-bottom: 300px;
+	padding-bottom: 300px;
   background-color: white;/*#D6F5F5;*/
   /*background: url(https://dl.dropboxusercontent.com/u/87043264/photos/HD-Wallpapers/light_wallpaper_trimmed.png) center center no-repeat;
   background-size: 100% 100%;*/
 }
 
 .soundcloud {
-    color: #EBF5FF;/*#FF6600;*/
+	color: #EBF5FF;/*#FF6600;*/
 }
 
 .gradientBody {
@@ -1286,16 +1286,16 @@ h4 .small {
 
 h5 small,
 h5 .small {
-    font-size: 100%;
-    font-style: italic;
-    font-weight: 300;
+	font-size: 100%;
+	font-style: italic;
+	font-weight: 300;
 }
 
 h6 small,
 h6 .small {
-    font-size: 100%;
-    font-style: italic;
-    font-weight: 300;
+	font-size: 100%;
+	font-style: italic;
+	font-weight: 300;
 }
 
 h1,
