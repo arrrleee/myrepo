@@ -8,22 +8,10 @@ var vibeshtmlfile = "vibes.html";
 var htmlfile;
 
 var app = express.createServer(express.logger());
-//var app = http.createServer( function(req,res){
-//  var pathname = url.parse(req.url).pathname;
-//  switch(pathname){
-//    case '/vibes':
-//       res.end('vibeshtmlfile');
-//        break;
-//    default:
-//        res.end('indexhtmlfile');
-//        break;
-//  }
-//}).listen(8080);
-
 
 //app.use(logfmt.requestLogger());
 
-app.get('/', function(request, response) {
+/*app.get('/', function(request, response) {
   var path = url.parse(request.url).pathname;
   switch(path) {
     case '/vibes':
@@ -34,6 +22,11 @@ app.get('/', function(request, response) {
       break;
   }
   var html = fs.readFileSync(htmlfile).toString();
+  response.send(html);
+});*/
+
+app.get('/', function(request, response) {
+  var html = fs.readFileSync(indexhtmlfile).toString();
   response.send(html);
 });
 
