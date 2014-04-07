@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- My CSS files -->
+    <link href="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/getWeather.css" rel="stylesheet">
+
+</head>
+
+<body id="page">
+
+<div id="home">
+
+	<h1 id="title">Vibes.</h1>
+
+	<h1 id="description">Listen to music based on the time of the day and weather condition of your city</h1></br>
+
+	<p id="chooseCity"><dfn>Choose the city closest to you:</dfn></p>
+
+	<div id="SF_Icon" href="javascript:;" onclick="addCity('sf');">
+		<span class="city-text"><span>San Francisco</span></span>
+	</div>
+	<div id="LA_Icon" href="javascript:;" onclick="addCity('la');">
+		<span class="city-text"><span>Los Angeles</span></span>
+	</div>
+	<div id="NY_Icon" href="javascript:;" onclick="addCity('ny');">
+		<span class="city-text"><span>New York</span></span>
+	</div>
+	<div id="TP_Icon" href="javascript:;" onclick="addCity('tp');">
+		<span class="city-text"><span>Taipei</span></span>
+	</div>
+
+</div> <!-- home -->
+
+<div id="weatherPage">
+	
+	<div id="sideText">
+		<div id="title_side"> </div>
+		<div id="cityDiv"> </div>
+		<div id="condDiv"> </div>
+		<div id="tempDiv"> </div>
+	</div>
+
+	<div id="SoundCloudPlayer"></div>
+
+	<a id="changeCity" href="javascript:;" onclick="changeCity();"> </a>
+
+</div>
+
+  <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Add getWeather.js -->
+    <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/getWeather.js"></script>
+
+</body>
+</html>
