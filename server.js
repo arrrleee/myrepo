@@ -35,6 +35,7 @@ var app = require('http').createServer(createServer);
 
 function createServer(req, res) {
   var path = url.parse(req.url).pathname;
+  console.log("Directly to path " + path);
   var fsCallback = function(error, data) {
     if(error) {
       throw error;
@@ -49,6 +50,7 @@ function createServer(req, res) {
       doc = fs.readFile(__dirname + '/vibes.html', fsCallback);
       break;
     default:
+      path = '';
       doc = fs.readFile(__dirname + '/index.html', fsCallback);
       break;
   }
