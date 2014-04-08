@@ -7,7 +7,7 @@ var indexhtmlfile = "index.html";
 var vibeshtmlfile = "vibes.html";
 var htmlfile;
 
-var app = express.createServer(express.logger());
+//var app = express.createServer(express.logger());
 
 //app.use(logfmt.requestLogger());
 
@@ -25,10 +25,34 @@ var app = express.createServer(express.logger());
   response.send(html);
 });*/
 
-app.get('/', function(request, response) {
+/*app.get('/', function(request, response) {
   var html = fs.readFileSync(indexhtmlfile).toString();
   response.send(html);
 });
+*/
+
+var app = require('http').createServer(createServer);
+
+function createServer(req, res) {
+  var path = url.parse(req.url).pathname;
+  var fsCallback = function(error, data) {
+    if(error) {
+      throw error;
+    }
+    res.writeHead(200);
+    res.write(data);
+    res.end();
+  }
+
+  switch(path) {
+    case '/vibes':
+      doc = fs.readFile(__dirname + '/vibes.html', fsCallback);
+      break;
+    default:
+      doc = fs.readFile(__dirname + '/index.html', fsCallback);
+      break;
+  }
+}
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
