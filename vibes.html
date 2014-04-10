@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
 
 <!-- My CSS files -->
     <link href="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/getWeather.css" rel="stylesheet">
-
+	<meta property="og:image" content="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/vibes_over_spectrum.jpg" />
 </head>
 
 <body id="page">
@@ -12,13 +12,13 @@
 <div id="fb-root"></div>
 	<script>
 	// Facebook share button
-		(function(d, s, id) {
+		/*(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
 		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=662885663746516";
 		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
+		}(document, 'script', 'facebook-jssdk'));*/
 	// Twitter tweet button
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 	</script>
@@ -57,10 +57,10 @@
 
 		<a id="changeCity" href="javascript:;" onclick="changeCity();"></a>
 
-		<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="icon"></div>
+		<div>
+			<a href="http://www.facebook.com/share.php?u=http://www.randywdlee.com/vibes" target="_blank"><img class="custom-share-button" src="https://dl.dropboxusercontent.com/u/87043264/icons/transparent_facebook.png"/></a>
 
-		<div id="custom-tweet-button">
-		  <a href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank"> </a>
+			<a href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank"><img class="custom-tweet-button" src="https://twitter.com/favicons/favicon.ico"/> </a>
 		</div>
 
 	</div>
