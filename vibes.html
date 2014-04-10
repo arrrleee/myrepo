@@ -9,13 +9,22 @@
 
 <body id="page">
 
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=185458068131858";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="home">
 
 	<img id="title" src="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/vibes_dropshadow.png"></img>
 
-	<h1 id="description">Listen to music based on the time of the day and weather condition of your city</h1>
+	<p id="description">Listen to music based on the time of the day and weather condition of your city</p>
 
-	<p id="chooseCity"><dfn>Choose the city closest to you: (Music will play automatically)</dfn></p>
+	<p id="chooseCity">Choose the city closest to you: (Music will play automatically)</p>
 
 	<div id="SF_Icon" href="javascript:;" onclick="addCity('sf');">
 		<span class="city-text"><span>San Francisco</span></span>
@@ -42,10 +51,14 @@
 		<div id="SoundCloudPlayer"></div>
 
 		<a id="changeCity" href="javascript:;" onclick="changeCity();"></a>
+
+
 	
 	</div>
 
 </div>
+
+<div class="fb-like" data-href="file:///Users/randylee/Documents/MyWebsite/vibes.html" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 
   <!-- Add jQuery library -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
