@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="https://www.facebook.com/2008/fbml">
 
 <head>
-	<meta property="og:image" content="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/vibes_over_spectrum.jpg"/>
+	<meta property="og:title" content="Vibes." />
+	<meta property="og:description"content="Listen to music based on the weather condition of your city."/>
+	<meta property="og:site_name" content="Vibes the App" />
+	<meta property="og:url" content="http://www.randywdlee.com/vibes" />
+	<meta property="fb:app_id" content="662885663746516" />
+	<meta property="og:image" content="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/vibes_white_over_spectrum.jpg"/>
+	<link rel="image_src" href="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/vibes_white_over_spectrum.jpg" />
+
+
 	<!-- My CSS files -->
     <link href="https://dl.dropboxusercontent.com/u/87043264/WeatherMusicApp/getWeather.css" rel="stylesheet">
 </head>
@@ -14,13 +22,14 @@
 <div id="fb-root"></div>
 	<script>
 	// Facebook share button
-		/*(function(d, s, id) {
+		(function(d, s, id) {
 		  var js, fjs = d.getElementsByTagName(s)[0];
 		  if (d.getElementById(id)) return;
 		  js = d.createElement(s); js.id = id;
 		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=662885663746516";
 		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));*/
+		}(document, 'script', 'facebook-jssdk'));
+		
 	// Twitter tweet button
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 	</script>
@@ -65,8 +74,17 @@
 
 
 <div id="social_icons">
+
+	
+	<div href="javascript:;" onclick="openFbPopUp();">
+		<span>FB</span>
+	</div>
+
+	<div class="fb-share-button" data-href="http://www.randywdlee.com/vibes" data-width="20" data-type="icon"></div>
+
 	<a href="http://www.facebook.com/share.php?u=http://www.randywdlee.com/vibes" target="_blank"><img class="custom-share-button" src="https://dl.dropboxusercontent.com/u/87043264/icons/round-transparent_facebook_30x30.png"/></a>
-	<a href="https://twitter.com/share?url=https%3A%2F%2Fdev.twitter.com%2Fpages%2Ftweet-button" target="_blank"><img class="custom-tweet-button" src="https://dl.dropboxusercontent.com/u/87043264/icons/round-transparent_twitter_30x30.png"/> </a>
+	
+	<a href="https://twitter.com/share?url=http://www.randywdlee.com/vibes" target="_blank"><img class="custom-tweet-button" src="https://dl.dropboxusercontent.com/u/87043264/icons/round-transparent_twitter_30x30.png"/> </a>
 	<a href="https://plus.google.com/share?url={http://www.randywdlee.com/vibes}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img class="custom-google-button" src="https://dl.dropboxusercontent.com/u/87043264/icons/round-transparent_google_30x30.png" alt="Share on Google+"/></a>
 </div>
 
