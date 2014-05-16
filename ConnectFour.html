@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- My CSS files -->
+    <link href="https://dl.dropboxusercontent.com/u/87043264/ConnectFour/ConnectFour.css" rel="stylesheet">
+
+<title>Connect Four</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Connect Four</h1>
+        <p>Author: Randy Lee</p>
+        <p>Updated: 5/16/14</p>
+
+        <table id="dropDiscTable">
+        <tr>
+            <td id="6" class="top" onclick="dropDisc(6);"></td>
+            <td id="13" class="top" onclick="dropDisc(13);"></td>
+            <td id="20" class="top" onclick="dropDisc(20);"></td>
+            <td id="27" class="top" onclick="dropDisc(27);"></td>
+            <td id="34" class="top" onclick="dropDisc(34);"></td>
+            <td id="41" class="top" onclick="dropDisc(41);"></td> 
+            <td id="48" class="top" onclick="dropDisc(48);"></td> 
+        </tr>
+        </table>
+        <table id="gameTable">
+        <tr>
+            <td id="5"></td>
+            <td id="12"></td>
+            <td id="19"></td>
+            <td id="26"></td>
+            <td id="33"></td>
+            <td id="40"></td>
+            <td id="47"></td>
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="11"></td>
+            <td id="18"></td>
+            <td id="25"></td>
+            <td id="32"></td>
+            <td id="39"></td>
+            <td id="46"></td>
+        </tr>
+        <tr>
+            <td id="3"></td>
+            <td id="10"></td>
+            <td id="17"></td>
+            <td id="24"></td>
+            <td id="31"></td>
+            <td id="38"></td>
+            <td id="45"></td>
+        </tr>
+        <tr>
+            <td id="2"></td>
+            <td id="9"></td>
+            <td id="16"></td>
+            <td id="23"></td>
+            <td id="30"></td>
+            <td id="37"></td>
+            <td id="44"></td>
+        </tr>
+        <tr>
+            <td id="1"></td>
+            <td id="8"></td>
+            <td id="15"></td>
+            <td id="22"></td>
+            <td id="29"></td>
+            <td id="36"></td> 
+            <td id="43"></td>
+        </tr>
+        <tr>
+            <td id="0"></td>
+            <td id="7"></td>
+            <td id="14"></td>
+            <td id="21"></td>
+            <td id="28"></td>
+            <td id="35"></td>
+            <td id="42"></td>
+        </tr>
+    </table>
+
+    <button id="restartGame" title="Click to restart the game" onclick="clearBoard();">Restart Game</button></br>
+
+    <button id="runTests" title="Click to run unit-tests" onclick="runTestCases();">Run Unit-Tests</button>
+
+    </div>
+
+  <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Add myChallenge.js -->
+    <script type="text/javascript" src="https://dl.dropboxusercontent.com/u/87043264/ConnectFour/ConnectFour.js"></script>
+
+</body>
+
+</html>
