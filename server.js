@@ -5,6 +5,7 @@ var url = require('url');
 
 var indexhtmlfile = "index.html";
 var vibeshtmlfile = "vibes.html";
+var calculatorhtmlfile = "calculator.html";
 var htmlfile;
 
 //var app = express.createServer(express.logger());
@@ -40,6 +41,7 @@ function createServer(req, res) {
     if(error) {
       throw error;
     }
+    res.setHeader('content-type', 'text/javascript');
     res.writeHead(200);
     res.write(data);
     res.end();
