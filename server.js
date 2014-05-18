@@ -2,6 +2,7 @@
 var express = require('express');
 var fs = require('fs');
 var url = require('url');
+var mime = require('mime');
 
 var indexhtmlfile = "index.html";
 var vibeshtmlfile = "vibes.html";
@@ -41,13 +42,7 @@ function createServer(req, res) {
     if(error) {
       throw error;
     }
-    var extname = path.extname(path);
-    var contentTypesByExtension = {
-      'html': 'text/html',
-      'js':   'text/javascript',
-      'css':  'text/css'
-    };
-    var contentType = contentTypesByExtension[extname] || 'text/plain';
+    var contentType = mime.lookup(path);
     res.setHeader('content-type', contentType);
     res.writeHead(200);
     res.write(data);
