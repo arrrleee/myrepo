@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- My CSS files -->
+    <link href="/Users/randylee/Documents/eBay/calculator.css" rel="stylesheet">
+
+<title>My Simple Calculator</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Simple Calculator</h1>
+        <p>Author: Randy Lee</p>
+        <p>Updated: 5/16/14</p>
+        <li class="note">Does not support multiple operations in the same calculation, please click on '=' to complete each calculation.</li>
+        <li class="note">Does not remember the previous calculation, so pressing '=' immediately after a calculation will not perform the same operation as the previous.</li>
+
+        <div id="screen"><span id="screenNum">0</span></div>
+        <table id="calculator">
+            <tr>
+                <td id="7" onclick="addNum(7);">7</td>
+                <td id="8" onclick="addNum(8);">8</td>
+                <td id="9" onclick="addNum(9);">9</td>
+                <td id="divide" onclick="addOp('divide');">&#247</td>
+            </tr>
+            <tr>
+                <td id="4" onclick="addNum(4);">4</td>
+                <td id="5" onclick="addNum(5);">5</td>
+                <td id="6" onclick="addNum(6);">6</td>
+                <td id="multiply" onclick="addOp('multiply');">&#215</td>
+            </tr>
+            <tr>
+                <td id="1" onclick="addNum(1);">1</td>
+                <td id="2" onclick="addNum(2);">2</td>
+                <td id="3" onclick="addNum(3);">3</td>
+                <td id="subtract" onclick="addOp('subtract');">-</td>
+            </tr>
+            <tr>
+                <td id="clr" onclick="clearCalc();">C</td>
+                <td id="0" onclick="addNum(0);">0</td>
+                <td id="=" onclick="calculate();">=</td>
+                <td id="add" onclick="addOp('add');">+</td>
+            </tr>
+        </table>
+
+        <button class="runTests" onclick="runTests();">Run Unit-Tests</button>
+
+    </div>
+
+  <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Add myChallenge.js -->
+    <script type="text/javascript" src="/Users/randylee/Documents/eBay/calculator.js"></script>
+
+</body>
+
+</html>
