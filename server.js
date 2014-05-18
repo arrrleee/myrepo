@@ -49,6 +49,9 @@ function createServer(req, res) {
     case '/vibes':
       doc = fs.readFile(__dirname + '/vibes.html', fsCallback);
       break;
+    case '/calculator':
+      doc = fs.readFile(__dirname + '/calculator.html', fsCallback);
+      break;
     default:
       path = '';
       doc = fs.readFile(__dirname + '/index.html', fsCallback);
