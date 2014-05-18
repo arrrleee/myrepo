@@ -41,7 +41,14 @@ function createServer(req, res) {
     if(error) {
       throw error;
     }
-    res.setHeader('content-type', 'application/javascript');
+    var extname = path.extname(path);
+    var contentTypesByExtension = {
+      'html': 'text/html',
+      'js':   'text/javascript',
+      'css':  'text/css'
+    };
+    var contentType = contentTypesByExtension[extname] || 'text/plain';
+    res.setHeader('content-type', contentType);
     res.writeHead(200);
     res.write(data);
     res.end();
