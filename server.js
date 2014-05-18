@@ -41,7 +41,7 @@ function createServer(req, res) {
     if(error) {
       throw error;
     }
-    res.setHeader('content-type', 'text/javascript');
+    res.setHeader('content-type', 'application/javascript');
     res.writeHead(200);
     res.write(data);
     res.end();
