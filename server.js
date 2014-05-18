@@ -42,8 +42,7 @@ function createServer(req, res) {
     if(error) {
       throw error;
     }
-    var contentType = mime.lookup(path);
-    res.setHeader('content-type', contentType);
+    res.setHeader('content-type', text/html);
     res.writeHead(200);
     res.write(data);
     res.end();
