@@ -42,7 +42,7 @@ function createServer(req, res) {
     if(error) {
       throw error;
     }
-   // res.setHeader('content-type', 'text/html');
+    res.setHeader('content-type', 'text/html');
     res.writeHead(200);
     res.write(data);
     res.end();
