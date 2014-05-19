@@ -2,7 +2,6 @@
 var express = require('express');
 var fs = require('fs');
 var url = require('url');
-var mime = require('mime');
 
 var indexhtmlfile = "index.html";
 var vibeshtmlfile = "vibes.html";
