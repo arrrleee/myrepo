@@ -6,6 +6,7 @@ var url = require('url');
 var indexhtmlfile = "index.html";
 var vibeshtmlfile = "vibes.html";
 var calculatorhtmlfile = "calculator.html";
+var connectfourhtmlfile = "ConnectFour.html";
 var htmlfile;
 
 //var app = express.createServer(express.logger());
@@ -53,6 +54,9 @@ function createServer(req, res) {
       break;
     case '/calculator':
       doc = fs.readFile(__dirname + '/calculator.html', fsCallback);
+      break;
+    case '/connect-four':
+      doc = fs.readFile(__dirname + '/ConnectFour.html', fsCallback);
       break;
     default:
       path = '';
